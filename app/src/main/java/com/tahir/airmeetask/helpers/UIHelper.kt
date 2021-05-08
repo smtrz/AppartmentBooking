@@ -98,9 +98,6 @@ object UIHelper {
             .setTitle(title)
             .setCancelable(true)
 
-            .setNegativeButton(
-                "No"
-            ) { dialog, _ -> dialog.cancel() }
 
         return builder
         // alert.show()

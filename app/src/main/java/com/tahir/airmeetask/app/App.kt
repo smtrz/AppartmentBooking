@@ -3,10 +3,7 @@ package com.tahir.airmeetask.app
 import android.app.Application
 import com.tahir.airmeetask.components.AppLevelComponent
 import com.tahir.airmeetask.components.DaggerAppLevelComponent
-import com.tahir.airmeetask.modules.ContextModule
-import com.tahir.airmeetask.modules.DateModule
-import com.tahir.airmeetask.modules.DbRepoModule
-import com.tahir.airmeetask.modules.NetModule
+import com.tahir.airmeetask.modules.*
 
 class App : Application() {
     lateinit var appLevelComponent: AppLevelComponent
@@ -16,6 +13,7 @@ class App : Application() {
         super.onCreate()
         app = this
         // setting up modules.
+
         appLevelComponent = DaggerAppLevelComponent.builder()
             .contextModule(ContextModule(this))
             .dateModule(DateModule())

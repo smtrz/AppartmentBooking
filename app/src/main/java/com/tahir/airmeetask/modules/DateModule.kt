@@ -1,8 +1,11 @@
 package com.tahir.airmeetask.modules
 
+import android.app.Activity
+import com.tahir.airmeetask.activities.MainActivity
+
+import com.tahir.airmeetask.helpers.DatePickerHelper
 import dagger.Module
 import dagger.Provides
-import java.text.SimpleDateFormat
 import java.util.*
 import javax.inject.Singleton
 
@@ -16,11 +19,12 @@ class DateModule {
         return Date()
     }
 
+
     @Provides
     @Singleton
-    fun getDateFormat(): SimpleDateFormat {
+    fun getdatePickerHelper(activity: MainActivity): DatePickerHelper {
 
-        return SimpleDateFormat("dd/MM/yyy HH:mm:ss", Locale.US)
+        return DatePickerHelper(activity)
     }
 
 

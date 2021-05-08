@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">AirMeeTask</string>
+
+    <string name="app_name">Airmee Task.</string>
+    <string name="distance">3 KMs away</string>
+    <string name="booked">Booked</string>
+    <string name="bedroom">3 bedrooms luxury appartment</string>
+    <string name="title">Tahir Appt.</string>
+    <string name="the_image_of_the_user_note">the image</string>
+    <string name="submit">Submit</string>
 </resources>
