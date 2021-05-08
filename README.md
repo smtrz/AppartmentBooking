@@ -1,4 +1,4 @@
-# My Notes
+# apartment booking
 
 This app is an android application written in 'KOTLIN' that helps you to manage appartment booking , it is designed using android's architectural components such as :
 
